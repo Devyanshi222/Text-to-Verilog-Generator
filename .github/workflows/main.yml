@@ -1,0 +1,12 @@
+name: Keep API Alive
+
+on:
+  schedule:
+    - cron: '*/20 * * * *'
+
+jobs:
+  keep_api_awake:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Ping API to keep it awake
+      run: curl https://text-to-verilog-generator.onrender.com/docs
