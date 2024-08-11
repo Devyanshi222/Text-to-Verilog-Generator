@@ -1,3 +1,5 @@
+# This file includes all the prompts we use throughout our codebase, as well as the set of sample descriptions that you can use to test the website.
+
 truth_table_prompt = """
 You are an expert at generating Truth Tables perfectly. Your task is to convert the given natural language description into a truth table. The truth table must be a dictionary, that can be easily converted to a pandas dataframe. Furthermore, based on this truth table, you must also provide the mermaid code in order to draw the exact circuit, including any select lines, 
 
