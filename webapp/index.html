@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waveform AI - Text-to-Verilog Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="particles-js" class="particles"></div>
+  <div class="container">
+    <h1>Waveform AI</h1>
+    <h2>Text-to-Verilog Generator</h2>
+    <p>Waveform AI instantly generates truth tables, circuit diagrams, Verilog code, and testbenches from your text descriptions.</p>
+
+    <textarea id="circuitDescription" placeholder="Describe your circuit here..."></textarea>
+    <button id="proceedBtn">Proceed</button>
+
+    <div class="results-grid" id="resultsGrid">
+      <div class="result-container">
+        <h3>Truth Table</h3>
+        <div class="result-content" id="truthTable"></div>
+      </div>
+      <div class="result-container">
+        <h3>Circuit Diagram</h3>
+        <div class="result-content" id="circuitDiagram"></div>
+      </div>
+      <div class="result-container">
+        <h3>Verilog Code</h3>
+        <div class="result-content" id="verilogCode"></div>
+        <button class="copy-btn" data-target="verilogCode">Copy</button>
+      </div>
+      <div class="result-container">
+        <h3>Testbench Code</h3>
+        <div class="result-content" id="testbenchCode"></div>
+        <button class="copy-btn" data-target="testbenchCode">Copy</button>
+      </div>
+    </div>
+
+    <button id="resetBtn" style="display: none;">Reset</button>
+    <button id="downloadBtn" style="display: none;">Download All</button>
+    <button id="shareBtn" style="display: none;">Share Results</button>
+  </div>
+
+  <div id="loadingOverlay">
+    <div class="spinner"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
